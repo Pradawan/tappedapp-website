@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapped — Download on the App Store</title>
+
+    <!-- Replace YOUR_APP_ID with your actual Apple App Store ID (e.g., id1234567890) -->
+    <meta http-equiv="refresh" content="0;url=https://apps.apple.com/app/tapped/id6744253592">
+
+    <script>
+        (function() {
+            var appStoreURL = "https://apps.apple.com/app/tapped/id6744253592";
+            var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+            if (isIOS) {
+                window.location.replace("itms-apps://apps.apple.com/app/tapped/id6744253592");
+            } else {
+                window.location.replace(appStoreURL);
+            }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page" style="text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <h1>Redirecting to the App Store…</h1>
+        <p>If you are not redirected automatically, <a href="https://apps.apple.com/app/tapped/id6744253592">tap here</a>.</p>
+    </div>
+</body>
+</html>
